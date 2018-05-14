@@ -13,7 +13,8 @@ namespace FluentValidationPOC
 
             var venda = new Venda()
             {
-                Data = DateTime.Today.AddDays(1)
+                Data = DateTime.Today,
+                Tipo = TipoVenda.Brinde
             };
 
             var validator = new VendaValidator();
